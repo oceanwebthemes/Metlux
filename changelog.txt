@@ -2,6 +2,11 @@ Changelog
 
 Tested up to: 4.7
 
+Version 1.0.6
+i)   	CSS Indentation optimized.
+ii)		Custom Logo Support Added.
+iii)    Image source escaped on template-team.php
+iv)     Email escaped in content-single.php
 
 Version 1.0.6
 i)   	css/custom-rtl.css replaced with rtl.css

@@ -99,7 +99,6 @@ blockquote P {
     border-color: #00bcd4;
 }
 .btn-theme {
-    
     color: #808080;
     border-color: #00bcd4;
 }
@@ -557,7 +556,8 @@ h3.content-title:after {
     transition: 0.4s ease-in-out;
 }
 .logo-menu.sticky {
-    background: #00bcd4;}
+    background: #00bcd4;
+}
 .logo-menu .logo h1 {
     margin: 0;
     padding: 0;
@@ -690,7 +690,7 @@ h1.site-title a {
 @media (max-width: 767px) {
     .logo-menu {
         position: relative;
-            height: 75px;
+        height: 75px;
     }
     .logo-menu .navbar-nav > li > a {
         padding: 10px;
@@ -736,11 +736,11 @@ body {
     height: 100%;
 }
 .carousel-inner h2 {
-text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 60px;
 }
 .carousel-inner p {
-text-transform: uppercase;
+    text-transform: uppercase;
     font-size: 60px;
 }
 /* Background images are set within the HTML using inline CSS, not here */

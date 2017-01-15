@@ -65,6 +65,12 @@ function metlux_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 		) ) );
+	add_theme_support( 'custom-logo', array(
+	  'height'      => 45,
+	  'width'       => 200,
+	  'flex-height' => true,
+	  'flex-width'  => true,  
+	 ) );
 }
 
 //registering featured image and defining custom size for image

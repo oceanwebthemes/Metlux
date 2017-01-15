@@ -58,11 +58,9 @@ get_header(); ?>
 		?>
 			
 			<div class="<?php echo $class; ?> col-sm-12 no-padding">
-				<div class="row">
 			
 				<?php if ( have_posts() ) : the_post();  ?>
 						<section class="our-team">
-							<div class="container">
 								<div class="row">
 									<div class="col-sm-12">
 										<!-- Section Title -->
@@ -86,17 +84,19 @@ get_header(); ?>
 									
 									while ( have_posts() ) : the_post(); $cn++;
 									$feat_team_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'metlux-team' );
-							        $feat_team_image = esc_url($feat_team_image[0]);
+							        $feat_team_image = $feat_team_image[0];
+							        $default_team_image = get_template_directory_uri().'/images/team/team1.png';
+
 							        
 								 ?>
 									<div class="col-md-3 col-sm-6 col-xs-12">
 										<div class="single">
 											<div class="image">
 											<?php	if ( has_post_thumbnail() ) {
-												 echo  $image= '<img src="'.$feat_team_image.'" alt="">';
+												 echo  $image= '<img src="'.esc_url($feat_team_image).'" alt="">';
 										                       									                    }
 										        else{   
-										                echo $image='<img src="'.esc_url(get_template_directory_uri()).'/images/team/team1.png" alt="">';
+										                echo $image='<img src="'.esc_url($default_team_image).'" alt="">';
 	     
 										        }	
 										      ?>
@@ -114,7 +114,7 @@ get_header(); ?>
 									
 								</div>
 
-							</div>
+					
 						</section>
 							
 							<div class="clear:both"></div>
@@ -140,7 +140,6 @@ get_header(); ?>
 						<?php endif; ?>
 
 				</div>
-			</div>
 			
 
 		<?php

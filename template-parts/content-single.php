@@ -67,7 +67,8 @@
     </div>
     <div class="info">
       <p><?php echo esc_html( get_the_author_meta('description') );?></p>
-      <h6><a href=" mailto:<?php echo esc_html( get_the_author_meta('user_email') );?>" title=""><?php echo esc_html( get_the_author_meta('display_name') );?> |</a> <?php echo esc_html( get_the_author_meta('user_email') );?></h6>
+      <?php $email= esc_html( get_the_author_meta('user_email') );?>
+      <h6><a href=" mailto:<?php  echo esc_attr( $email );?>" title=""><?php echo esc_html( get_the_author_meta('display_name') );?> |</a> <?php echo esc_html( get_the_author_meta('user_email') );?></h6>
     </div>
     </div>
 
