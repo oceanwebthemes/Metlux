@@ -61,7 +61,7 @@
                 $wp_customize->add_setting( 'metlux_copyright_setting', array(
                 'capability'        => 'edit_theme_options',
                 'sanitize_callback' => 'metlux_theme_sanitize_text',
-                'default'           =>  __('Copyright &copy; 2017 ','metlux'),
+                'default'           =>  __('','metlux'),
                 
                 ) );
 
@@ -69,8 +69,7 @@
                 'settings'               => 'metlux_copyright_setting',
                 'label'                 =>  __( 'Write Copyright Text', 'metlux' ),
                 'section'               => 'metlux_layout_options',
-                'type'                  => 'text',
-                
+                'type'                  => 'text',                
                 'priority'              => 20
                 ) );
 
