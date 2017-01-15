@@ -46,9 +46,7 @@
 			<?php
               if (has_custom_logo()){ ?>
               <div class="logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>" title="">
                   <?php the_custom_logo(); ?>                  
-                </a>
                 <p class="site-description"><?php bloginfo('description');?></p>
               </div>
               <?php }else{ ?>
